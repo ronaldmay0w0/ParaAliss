@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hola,Cuidate</title>
+  <link rel="stylesheet"  type="text/css" href="estilos.css" />
+  <script>
+    function accionParaCuandoElTeDigaQueSi() {
+      alert("Se que");
+      alert("3");
+    }
+    function mueveElBoton() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+
+      newWidth = Math.random() * width;
+      newheigth = Math.random() * height;
+
+      document.getElementById("btnNo").style.position = "absolute";
+      document.getElementById("btnNo").style.left = newWidth + "px";
+      document.getElementById("btnNo").style.top = newHeight + "px";
+    }
+  </script>
+</head>
+
+<body onclick="PlayAudio()">
+
+  <header>
+    <div>
+      <img src="Imagenes\captura_1.png" width="60"
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Pagina Web</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <br />
+    <br />
+    <br />
+
+
+    <center><b>
+        <h1>¿Miao? ^^</h1>
+      </b></center>
+
+    <center>
+
+      <input type="button" onclick="accionParaCuandoElTeDigaQueSi()" id="btnSi" Value="SI" />
+      <input type="button" onmouseover="mueveElBoton()" id="btnNo" Value="NO" />
+    </center>
+
+    <img src="Gifs\cute-bonito.gif" width="50" height="50" />
+
+    <p>Hola, vos ya sabes mi nombre Esta nota enpieza asi</p>
+
+    <h3>Ingresa datos ^^ ,si deseas</h3>
+
+    <form>
+
+
+      <label for="nombre"> Ingresa tu Name :3</label>
+      <input type="text" value="Cuak" placeholder="¿Cual es tu nombre?" name="nombre">
+      <br>
+
+      <label for="Edad"> ¿Edad? :3</label>
+      <select name="Edad" id="">
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+      </select>
+      <br>
+
+      <label> ¿Quieres agua? :3 xd</label><br>
+      <input type="radio" name="agua">Si ^^<br>
+      <input type="radio" name="agua">ª, No<br>
+
+      <label> ¿recuerdas?</label><br>
+      <input type="date" name="conociendoxd">¿?<br>
+
+      <label> Elige solo un color: </label><br>
+
+      <input type="color"><br>
+
+      <input type="submit">
+
+    <!--un formulario-->
+    </form>
+
+    <h3>Indice :D</h3>
+    <ul>
+      <li>Algunas Imagenes</li>
+      <li>Pupiletras :3 xd</li>
+      <li>Cosas Random</li>
+      <li>Promesas</li>
+      <li>Videos</li>
+      <li>¿Final?</li>
+    </ul>
+
+    <!--Seccion de imagenes-->
+    <section>
+      <h3>Algunas imagenes....</h3>
+      <figure>
+        <img src="Imagenes/Te_Extraño.jpg" width="220" height="300" alt="foto hecha por ti" />
+        <figcaption>Te queria decir que te extraño 2022</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Imagenes\plantita_1.jpg" width="220" height="350" alt="foto hecha por ti" />
+        <figcaption>Linda plantita de ti ^^ , Aunque talvez ya no este con vida sigue siendo linda</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Imagenes/Te_Extraño.jpg" width="220" height="300" alt="foto hecha por ti" />
+        <figcaption>Te queria decir que te extraño 2022</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Imagenes/Te_Extraño.jpg" width="220" height="300" alt="foto hecha por ti" />
+        <figcaption>Te queria decir que te extraño 2022</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Imagenes/Te_Extraño.jpg" width="220" height="300" alt="foto hecha por ti" />
+        <figcaption>Te queria decir que te extraño 2022</figcaption>
+      </figure>
+    </section>
+
+    <h3>Pupiletras ;3</h3>
+
+    <center>
+
+      <table>
+        <tr>
+          <td>A</td>
+          <td>M</td>
+          <td>O</td>
+          <td>R</td>
+          <td>A</td>
+          <td>B</td>
+          <td>E</td>
+          <td>S</td>
+          <td>O</td>
+          <td>S</td>
+        </tr>
+        <tr>
+          <td>Q</td>
+          <td>C</td>
+          <td>W</td>
+          <td>E</td>
+          <td>R</td>
+          <td>T</td>
+          <td>Y</td>
+          <td>U</td>
+          <td>I</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>O</td>
+          <td>C</td>
+          <td>A</td>
+          <td>M</td>
+          <td>I</td>
+          <td>S</td>
+          <td>T</td>
+          <td>A</td>
+          <td>D</td>
+          <td>L</td>
+        </tr>
+        <tr>
+          <td>P</td>
+          <td>H</td>
+          <td>A</td>
+          <td>S</td>
+          <td>D</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>J</td>
+          <td>O</td>
+        </tr>
+        <tr>
+          <td>P</td>
+          <td>O</td>
+          <td>E</td>
+          <td>M</td>
+          <td>A</td>
+          <td>S</td>
+          <td>H</td>
+          <td>J</td>
+          <td>K</td>
+          <td>R</td>
+        </tr>
+        <tr>
+          <td>Ñ</td>
+          <td>C</td>
+          <td>V</td>
+          <td>B</td>
+          <td>N</td>
+          <td>M</td>
+          <td>Q</td>
+          <td>W</td>
+          <td>E</td>
+          <td>E</td>
+        </tr>
+        <tr>
+          <td>Z</td>
+          <td>O</td>
+          <td>R</td>
+          <td>T</td>
+          <td>C</td>
+          <td>A</td>
+          <td>R</td>
+          <td>T</td>
+          <td>A</td>
+          <td>S</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td>L</td>
+          <td>Q</td>
+          <td>W</td>
+          <td>E</td>
+          <td>R</td>
+          <td>T</td>
+          <td>Y</td>
+          <td>U</td>
+          <td>I</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>A</td>
+          <td>R</td>
+          <td>I</td>
+          <td>Ñ</td>
+          <td>O</td>
+          <td>A</td>
+          <td>S</td>
+          <td>D</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>T</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>J</td>
+          <td>K</td>
+          <td>K</td>
+          <td>L</td>
+          <td>L</td>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>E</td>
+          <td>R</td>
+          <td>E</td>
+          <td>G</td>
+          <td>A</td>
+          <td>L</td>
+          <td>O</td>
+          <td>S</td>
+          <td>X</td>
+        </tr>
+
+      </table>
+    </center>
+
+    <!--Seccion de Audio-->
+    <section>
+      <audio id="music1" loop>
+        <source src="Audio\The Scientist.mp3" type="audio/mpeg" />
+      </audio>
+
+    </section>
+    <script>
+      function PlayAudio() {
+        document.getElementById("music1").play();
+      }
+    </script>
+
+  </main>
+</body>
+
+</html>

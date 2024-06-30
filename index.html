@@ -2,272 +2,406 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fin</title>
-  <style>
-    body {
-      background-color: #e2d2ad;
-    }
-  </style>
-  <script>
-    function accionParaCuandoElTeDigaQueSi() {
-      alert("Se que");
-      alert("3");
-    }
-    function mueveElBoton() {
-      width = window.innerWidth;
-      height = window.innerHeight;
+    <meta charset="utf-8">
+    <title>Hola, Cuidate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
 
-      newWidth = Math.random() * width;
-      newheigth = Math.random() * height;
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-      document.getElementById("btnNo").style.position = "absolute";
-      document.getElementById("btnNo").style.left = newWidth + "px";
-      document.getElementById("btnNo").style.top = newHeight + "px";
-    }
-  </script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body onclick="PlayAudio()">
-
-  <header>
-    <div>
-      <img src="Imagenes\captura_1.png" width="60"
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">Aliss</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link">PDFs</a>
+                    <a href="service.html" class="nav-item nav-link">Fotos</a>
+                    <a href="menu.html" class="nav-item nav-link">Recordatorios</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Random xd</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="reservation.html" class="dropdown-item">Datos interactivos</a>
+                            <a href="testimonial.html" class="dropdown-item">Algo más...</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Mis datos</a>
+                </div>
+            </div>
+        </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Pagina Web</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <br />
-    <br />
-    <br />
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img\Te_Extraño.jpg"  height="800" alt="foto hecha por ti" >
+                    <div class="carousel-caption1 d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-primary1 font-weight-medium m-0">Esto es para ti</h2>
+                        <h1 class="display-1 text-crema m-0">¿Hola? ^^</h1>
+                        <h2 class="text-primary1 1m-0">Ya sabes quien soy :/</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img\nuez.jpg" width="500" height="800" alt="foto hecha por ti una  uez" ">
+                    <div class="carousel-caption1 d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-primary1 font-weight-medium m-0">No mucho que decir la verdad</h2>
+                        <h1 class="display-1 text-crema m-0">Estoy bien</h1>
+                        <h2 class="text-primary1 m-0">Espero que estes bien ^^</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img\noche_2.jpg" width="500" height="800" alt="foto casi ultima" ">
+                    <div class="carousel-caption1 d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-primary1 font-weight-medium m-0">No mucho que pensar</h2>
+                        <h1 class="display-1 text-crema m-0">Ya me despidire :3</h1>
+                        <h2 class="text-primary1 m-0">El tiempo pasa rapido, jsjsjs</h2>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
 
 
-    <center><b>
-        <h1>¿Miao? ^^</h1>
-      </b></center>
-
-    <center>
-
-      <input type="button" onclick="accionParaCuandoElTeDigaQueSi()" id="btnSi" Value="SI" />
-      <input type="button" onmouseover="mueveElBoton()" id="btnNo" Value="NO" />
-    </center>
-
-    <img src="Gifs\cute-bonito.gif" width="50" height="50" />
-
-    <p>Hola, vos ya sabes mi nombre Esta nota enpieza asi</p>
-
-    <h4>Ingresa datos ^^ ,si deseas</h4>
-
-    <form>
-
-
-      <label for="nombre"> Ingresa tu Name :3</label>
-      <input type="text" value="Cuak" placeholder="¿Cual es tu nombre?" name="nombre">
-      <br>
-
-
-
-
-      <label for="Edad"> ¿Edad? :3</label>
-      <select name="Edad" id="">
-        <option value="12">12</option>
-        <option value="13">13</option>
-        <option value="14">14</option>
-        <option value="15">15</option>
-        <option value="16">16</option>
-        <option value="17">17</option>
-      </select>
-      <br>
-
-      <h5>Elije un color :D</h5>
-
-      <input type="color">
-
-      <input type="button" value="Terminar encuesta">
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary1 text-uppercase" style="letter-spacing: 5px;">Mientras no te detengas, avanzaras</h4>
+                <h1 class="display-4">Llegaste aqui ^^ , siga adelante</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Mi Historia, Antes de conocerte</h1>
+                    <h5 class="mb-3">Sera un poco breve, ya que cuando antes de conocerte no era tan interesante</h5>
+                    <p>Antes de conocerte era un chico muy amable y sobre todo sociable, aunque era timido y aunque tenia preocupaciones y miedo siempre estava dispuesto a estar felis y ayudar</p>
+                    <p>Boton de abajo te llevara a una foto antigua de mi xd</p>
+                    <a href="curiosaxd.html" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Boton :v</a>
+                </div>
+                <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-75 h-75" src="img\gatitos1.png" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Mi vision</h1>
+                    <p>No tengo muchas ideas, pocas de ellas salen.
+                        Y muchas de ellas se quedan</p>
+                    <p>Con esta Pagina creada para vos solo quiero:</p>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Que intente solucionar, no pude hacerlo bien</h5>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Disculpa, ya no te molestare</h5>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Te esperare hasta que mi corazon deje de latir</h5>
+                    <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Todo lo que podria decirte</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
 
 
-    </form>
+    <!-- Service Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">devi hacerlo en el momento,ya es tarde</h4>
+                <p>Enero-2023</p>
+                <h1 class="display-4">Calificando Dibujitos ^^ Tuyos :3</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img\ajolotredrawAlis.jpg" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa fa-truck service-icon"></i>Ajolotito Kawaii ^^</h4>
+                            <p class="m-0">Dibujas muy lindo, ademas que uno de mis animalitos preferidos son lo AJOLOTES me encanta ^^</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img\EditAveAliss.jpg" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa fa-coffee service-icon"></i>Lorito en nieve :3</h4>
+                            <p class="m-0">Jsjsjsjs, Aunque es inspirado en mi dinujito, me encanta mucho más por ser tan detallista conmigo :3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img\corazondrawAliss.jpg" alt="">
+                        </div>
+                        <div class="col-sm-7">
+                            <h4><i class="fa fa-award service-icon"></i>Corazon PixelArt UwU</h4>
+                            <p class="m-0">Esta muy bien dibujado y deliniado, Ademas como fue hecho por ti para mi,me encanta y me da alegria es hermoso ^w^</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
 
-    <h3>Indice :D</h3>
-    <ul>
-      <li>Algunas Imagenes</li>
-      <li>Pupiletras :3 xd</li>
-      <li>Cosas Random</li>
-      <li>Promesas</li>
-      <li>Videos</li>
-      <li>¿Final?</li>
-    </ul>
 
-    <!--Seccion de imagenes-->
-    <section>
-      <h3>Galeria de fotos :3</h3>
-      <figure>
-        <img src="imagenes/descarga (1).jpg" alt="Descripcion de la imagen: " />
-        <figcaption>Nubes de atardecer</figcaption>
-      </figure>
-    </section>
+    <!-- Offer Start -->
+    <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
+        <div class="container py-5">
+            <h1 class="display-3 text-primary mt-3">Nunca dejes de soñar y lograr lo impocible</h1>
+            <h1 class="text-white mb-3">Nunca dejes de creer en ti</h1>
+            <h4 class="text-white font-weight-normal mb-4 pb-3">Solo tu eliges quien ser,los demas solo te pueden hacer ver lo que eres (Que no te afecte)</h4>
+            <form class="form-inline justify-content-center mb-4">
+                <div class="input-group">
+                    <input type="text" class="form-control p-4" placeholder="Presiona >>>>" style="height: 60px;">
+                    <div class="input-group-append">
+                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <h3>Pupiletras ;3</h3>
+                        <script>
+    
+                            function accionParaCuandoElTeDigaQueSi(){
+                                Swal.fire({
+                                  title: "Sip, eres muy curiosa :3",
+                                  confirmButtonText: 'Miauuu ^^',
+                                  imageUrl: 'img/decoracionalerta.png',
+                                  imageWidth: 800,
+                                  imageHeight: 50,
+                                  width: 600,
+                                  padding: "3em",
+                                  color: "#1c5560",
+                                  background: "#fff url(img/fondodelalert.jpg)",
+                                  backdrop: `
+                                        #001f3698
+                                        url("img/Gatovoladorxd.gif")
+                                        left top
+                                        no-repeat
+                                      `
+                                });
+                            }
+                        </script>
+                        <button class="btn btn-primary font-weight-bold px-4" type="button" onclick ="accionParaCuandoElTeDigaQueSi()" id = "btnSi" Value="SI" >¿Eres curiosa?</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Offer End -->
 
-    <center>
 
-      <table>
-        <tr>
-          <td>A</td>
-          <td>M</td>
-          <td>O</td>
-          <td>R</td>
-          <td>A</td>
-          <td>B</td>
-          <td>E</td>
-          <td>S</td>
-          <td>O</td>
-          <td>S</td>
-        </tr>
-        <tr>
-          <td>Q</td>
-          <td>C</td>
-          <td>W</td>
-          <td>E</td>
-          <td>R</td>
-          <td>T</td>
-          <td>Y</td>
-          <td>U</td>
-          <td>I</td>
-          <td>F</td>
-        </tr>
-        <tr>
-          <td>O</td>
-          <td>C</td>
-          <td>A</td>
-          <td>M</td>
-          <td>I</td>
-          <td>S</td>
-          <td>T</td>
-          <td>A</td>
-          <td>D</td>
-          <td>L</td>
-        </tr>
-        <tr>
-          <td>P</td>
-          <td>H</td>
-          <td>A</td>
-          <td>S</td>
-          <td>D</td>
-          <td>F</td>
-          <td>G</td>
-          <td>H</td>
-          <td>J</td>
-          <td>O</td>
-        </tr>
-        <tr>
-          <td>P</td>
-          <td>O</td>
-          <td>E</td>
-          <td>M</td>
-          <td>A</td>
-          <td>S</td>
-          <td>H</td>
-          <td>J</td>
-          <td>K</td>
-          <td>R</td>
-        </tr>
-        <tr>
-          <td>Ñ</td>
-          <td>C</td>
-          <td>V</td>
-          <td>B</td>
-          <td>N</td>
-          <td>M</td>
-          <td>Q</td>
-          <td>W</td>
-          <td>E</td>
-          <td>E</td>
-        </tr>
-        <tr>
-          <td>Z</td>
-          <td>O</td>
-          <td>R</td>
-          <td>T</td>
-          <td>C</td>
-          <td>A</td>
-          <td>R</td>
-          <td>T</td>
-          <td>A</td>
-          <td>S</td>
-        </tr>
-        <tr>
-          <td>X</td>
-          <td>L</td>
-          <td>Q</td>
-          <td>W</td>
-          <td>E</td>
-          <td>R</td>
-          <td>T</td>
-          <td>Y</td>
-          <td>U</td>
-          <td>I</td>
-        </tr>
-        <tr>
-          <td>C</td>
-          <td>A</td>
-          <td>R</td>
-          <td>I</td>
-          <td>Ñ</td>
-          <td>O</td>
-          <td>A</td>
-          <td>S</td>
-          <td>D</td>
-          <td>F</td>
-        </tr>
-        <tr>
-          <td>C</td>
-          <td>T</td>
-          <td>F</td>
-          <td>G</td>
-          <td>H</td>
-          <td>J</td>
-          <td>K</td>
-          <td>K</td>
-          <td>L</td>
-          <td>L</td>
-        </tr>
-        <tr>
-          <td>V</td>
-          <td>E</td>
-          <td>R</td>
-          <td>E</td>
-          <td>G</td>
-          <td>A</td>
-          <td>L</td>
-          <td>O</td>
-          <td>S</td>
-          <td>X</td>
-        </tr>
+    <!-- Menu Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Algunas pequeñas frases</h4>
+                <h1 class="display-4">Vive la Vida ^^</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mb-5">La Felicidad</h1>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/alegria (1).png" alt="">
+                            <h5 class="menu-price">1</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>La felicidad</h4>
+                            <p class="m-0">es una manera de viajar, no un destinor</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/alegria (2).png" alt="">
+                            <h5 class="menu-price">2</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>La felicidad humana</h4>
+                            <p class="m-0">generalmente no se logra con grandes golpes de suerte, que pueden ocurrir pocas veces, sino con pequeñas cosas que ocurren todos los días</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/alegria (3).png" alt="">
+                            <h5 class="menu-price">3</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>El término 'felicidad'</h4>
+                            <p class="m-0">perdería todo su significado si no fuese compensado por la tristeza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="mb-5">La tristeza</h1>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/Tristeza (1).png" alt="">
+                            <h5 class="menu-price">1</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>No puedes evitar</h4>
+                            <p class="m-0">que el pájaro de la tristeza vuele sobre ti, pero puedes evitar que anide en tus cabellos</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/Tristeza (2).png" alt="">
+                            <h5 class="menu-price">2</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Nunca te rindas</h4>
+                            <p class="m-0">a la melancolía </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/Tristeza (3).png" alt="">
+                            <h5 class="menu-price">3</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Las lágrimas</h4>
+                            <p class="m-0">son palabras que necesitan ser escritas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu End -->
 
-      </table>
-    </center>
+
+    <!-- Reservation Start -->
+    <div class="container-fluid my-5">
+        <div class="r">
+            <div class="sueñaportada1 position-relative overlay-top overlay-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 my-5 my-lg-0">
+                        <div class="p-5">
+                            <div class="mb-4">
+                                <h1 class="display-3 text-primary">jsjsjss ^^</h1>
+                                <h1 class="text-white">algunas cositas más</h1>
+                            </div>
+                            <p class="text-white">No importa lo lento que vayas siempre y cuando no te detengas.</p>
+                            <ul class="list-inline text-white m-0">
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>No me quiero que llores de la nada</li>
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Llora por cosas que de verdad deves llorar</li>
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Cuida a tu hermanita ^^ a tu mamá y papá</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reservation End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Información mia :D</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>-------,Arequipa, Perú</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+51 91- --- -77</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>Dm40-----@gmail.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Mis redes sociales</h4>
+                <p>Lo pongo por si acaso xd</p>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Horas que tengo tiempo:</h4>
+                <div>
+                    <h6 class="text-white text-uppercase">Lunes - sabado</h6>
+                    <p>Ni ideaxd, en las noches :D</p>
+                    <h6 class="text-white text-uppercase">Domingo</h6>
+                    <p>en las noches igual :D</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">GitHub</a>. Todo reservado.</a></p>
+            <p class="m-0 text-white">Diseñado <a class="font-weight-bold" href="">RonaldMay</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 
     <!--Seccion de Audio-->
     <section>
-      <audio id="music1" loop>
-        <source src="Audio\The Scientist.mp3" type="audio/mpeg" />
-      </audio>
+        <audio id="music1" loop>
+          <source src="Audio\The Scientist.mp3" type="audio/mpeg" />
+        </audio>
+  
+      </section>
+      <script>
+        function PlayAudio() {
+          document.getElementById("music1").play();
+        }
+      </script>
 
-    </section>
-    <script>
-      function PlayAudio() {
-        document.getElementById("music1").play();
-      }
-    </script>
-
-  </main>
 </body>
 
 </html>
