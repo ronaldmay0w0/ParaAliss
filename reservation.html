@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Estoy aqui</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body onclick="PlayAudio()"></body>
+<body class="colorpg4">
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar5">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">Aliss</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="Programas.html" class="nav-item nav-link">Cositas para vos</a>
+                    <a href="service.html" class="nav-item nav-link">Imagenes^^</a>
+                    <a href="menu.html" class="nav-item nav-link">Palabritas :3</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mas cositas</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="reservation.html" class="dropdown-item">Textos :3</a>
+                            <a href="testimonial.html" class="dropdown-item">Extras^^</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">^^Recordatorios sjsjs</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header3 mb-5 position-relative overlay-bottom4">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Reservation</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Textos, date tiempo si quieres leerlos</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Reservation Start -->
+    <!--<div class="container-fluid py-5">
+        <div class="container">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 my-5 my-lg-0">
+                        <div class="p-5">
+                            <div class="mb-4">
+                                <h1 class="display-3 text-primary">30% OFF</h1>
+                                <h1 class="text-white">For Online Reservation</h1>
+                            </div>
+                            <p class="text-white">Lorem justo clita erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
+                                ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea</p>
+                            <ul class="list-inline text-white m-0">
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</li>
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</li>
+                                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                            <h1 class="text-white mb-4 mt-5">Book Your Table</h1>
+                            <form class="mb-5">
+                                <div class="form-group">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Name"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Email"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
+                                        <option selected>Person</option>
+                                        <option value="1">Person 1</option>
+                                        <option value="2">Person 2</option>
+                                        <option value="3">Person 3</option>
+                                        <option value="3">Person 4</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Book Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reservation End -->
+
+        <div class="documentoxd formal">
+        <h1 class="colordoc">Eres lo mejor^^</h1>
+        <img src="img/tebusco.jpg" alt="Imagen" class="imagennnn" />
+        <p class="grandedocumentoxd">Nunca te intenté buscar, pero te encontré, y creo que fue lo mejor que me pudo pasar. No lo digo por decir, lo digo porque realmente fue lo mejor. Desde el momento en que nos conocimos, siento que fue lo más lindo y divertido que me ha pasado. Todo eso me hace tan feliz, no sé ni qué más podría decir... Solo sé que te escribí tantas cartitas, ¿te acuerdas de la bolsita de papel con el corazoncito? :3 ¡Ese fue el primer regalito que te di! Fue tan lindo verte reír y saltar de emoción, como si fueras una niña feliz. Cada noche, escribirte era una de las cosas que más amaba (aunque mis padres no me dejaban, siempre fingía que tenía mucha tarea para poder hablar contigo XD). Pero nada, nada me impediría estar contigo.<br><br>
+
+            Sé que hubo momentos divertidos, como darnos besitos y terminar golpeándonos nuestras cabezas por accidente, jaja :3 Pero lo más lindo de todo es que contigo me sentía tan seguro de ser yo mismo, y sé que tú también te sentías segura siendo tú. Porque, en serio, solo con ver tu risa cuando estábamos juntos sabía lo que sentías.<br><br>
+            
+            Te amé mucho, te amo mucho, simplemente te amo. ^^</p>
+    </div>
+
+    <div class="documentoxd formal">
+        <h1 class="colordoc">Nada de frio</h1>
+        <img src="img/nochebellalago.jpg" alt="Imagen" class="imagennnn1" />
+        <p class="grandedocumentoxd">Hubo problemas, creo... ¿Recuerdas? Empezaste a alejarte, a desconfiar, a tomar otros caminos, caminos separados de los míos. Sé que te busqué mucho, sentía frío... simplemente frío, porque las cosas comenzaban a congelarse entre nosotros. Y de todo eso, pensaba mucho en ti. No quería que la niña de mis ojos estuviera así, y menos quería perderte a ti, a ti que te habías convertido en mucho más que solo una persona para mí.<br><br>
+
+            Hubo una temporada en que quise rendirme... ¿Recuerdas la tacita? Era mi manera de decirte que me iba a ir de tu lado para siempre. Y ¿la chalina y Scott? Era para que cuando me fuera, la tuvieras y la guardaras como un recuerdo. En Scott puedes confiar, y con mi chalina podrías sentirme cerca, abrigarte con ella... Pero al final, nunca me fui, ¿verdad? :3 Y todo fue porque decidiste volver, porque decidimos volver. Y aunque algunas dudas quedaron, poco a poco todo comenzó a encajar de nuevo.<br><br>
+            
+            Aunque, en realidad, durante todo ese tiempo, yo seguía mal… no te lo contaba porque quería que tú estuvieras bien. Pero, aunque no lo veías, todo eso afectó muchas cosas entre nosotros. Sin embargo, aunque todo estuviera tan mal, siempre te amaba. Incluso en mis peores momentos, mi amor por ti nunca cambió. ^^</p>
+    </div>
+
+    <div class="documentoxd formal">
+        <h1 class="colordoc">¿Valdria la pena?</h1>
+        <img src="img/nocheencontrarnos.jpg" alt="Imagen" class="imagennnn" />
+        <p class="grandedocumentoxd">Sé que, aunque las cosas volvieron a mejorar, yo empecé a arruinarlas, creo… :’3 Fue tan lindo salir contigo, ¿recuerdas? Jsjs, esos momentos cuando nos quedábamos mirando y recostados juntos, o todas esas pequeñas cositas lindas que compartimos. Aunque sé que en dos ocasiones no pude ir… (en realidad, me castigaron por cosas y no había forma de avisarte a tiempo, pero… era mi culpa, lo reconozco). Y lo peor, creo, fue dejarte esperando… lo siento tanto. Aun así, lo peor es haberte hecho quedar hasta tan tarde de tus horas. <br><br>
+
+            Aunque, en realidad, lo que me pasaba es que sentía mucha ansiedad, miedo… Miedo de que me dejaras, miedo de perderte algún día, miedo  estar solo, todo por estar tan mal yo. Solo pensaba en mis miedos, y al final, creo que esas cosas fueron las que te alejaron, en lugar de acercarte a mí. No hay tanto misterio en eso, solo que un día me prometí mejorar, y si, ya estoy mejor, ya no tengo esos miedos.<br><br>
+            
+            Pero ahora lo que más quiero es estar a tu lado, no por mis miedos y ansiedad, sino porque realmente quiero estar contigo. Porque te quiero a ti, y eso es lo único que importa. ^^</p>
+    </div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer3 text-white mt-5 pt-5 px-0 position-relative overlay-top4">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <center><h2 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Me enamoré tanto de ti</h2>
+                <h5 class="colorblancoxd">que me quitaste las ganas de conocer a alguien más. Perdón por amarte tanto, pero eres todo lo que mi corazón siempre soñó. Eres la única con quien realmente quiero compartir todo, porque un amor como el tuyo no se encuentra dos veces en esta vida, y un amor como el nuestro no sucede dos veces. Eres tan grande, tan especial para mí, que no puedo imaginar un futuro sin ti. Quiero que estemos juntos por siempre, que vivamos cada día como si fuera el último, y que nuestro amor dure toda la eternidad. :3</h5></center>
+                
+            </div>
+            
+        </div>
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">GitHub</a>. Todo reservado.</a></p>
+            <p class="m-0 text-white">Diseñado <a class="font-weight-bold" href="">RonaldMay^^</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary4 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+            <!--Seccion de Audio-->
+    <section>
+        <audio id="music1" loop>
+          <source src="Audio/Goodbye.mp3" type="audio/mpeg" />
+        </audio>
+  
+    </section>
+      <script>
+        function PlayAudio() {
+          document.getElementById("music1").play();
+        }
+      </script>
+</body>
+
+</html>
