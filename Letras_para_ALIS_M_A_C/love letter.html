@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>untoldcoding</title>
+    <link rel="stylesheet" href="love letter.css" />
+  </head>
+  <body onclick="PlayAudio()">
+    <div class="envelope">
+      <div class="back"></div>
+      <div class="letter">
+        <div class="heart"></div>
+        <div class="text">
+          <a href="..\menu.html">Regresar a la pagina</a>
+          <center><p>
+            Me gustaría :3<br>
+            que estuvieras aquí conmigo,<br>
+            o yo allá contigo,<br>
+            o que estuvieramos juntos <br>
+            en cualquier lugar ^^.
+
+          </p></center>
+          
+        </div>
+      </div>
+      <div class="front"></div>
+      <div class="top"></div>
+      <div class="shadow"></div>
+      <div class="text1">
+        <h2>Te extraño, te fuistes de mi lado, pero no de mi mente :3</h2>
+      </div>
+    </div>
+    <section>
+      <audio id="music1" loop>
+        <source src="..\Audio\Sleep Away.mp3" type="audio/mpeg" />
+      </audio>
+
+    </section>
+    <script>
+      function PlayAudio() {
+        document.getElementById("music1").play();
+      }
+    </script>
+  </body>
+</html>
+
+
+<script>
+  // Obtén el elemento del sobre
+  const envelope = document.querySelector('.envelope');
+
+  // Agrega un evento de clic
+  envelope.addEventListener('click', function() {
+    // Cambia la clase 'open' al hacer clic
+    envelope.classList.toggle('open');
+  });
+</script>
